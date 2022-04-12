@@ -1,0 +1,23 @@
+### Find all products
+Get http://localhost:8080/product
+
+### Find a product by id 
+GET http://localhost:8080/product/3
+
+### Find products by category
+GET http://localhost:8080/product/category/clothes
+
+### Create a product
+Post http://localhost:8080/product/create
+Content-Type: application/json
+
+{
+    "name": "shoe",
+    "image": "img1",
+    "brand": "bob",
+    "category": "clothes",
+    "description": "something",
+    "rating": 4,
+    "price": 29,
+    "countInStock": 40
+}
