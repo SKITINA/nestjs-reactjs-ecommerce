@@ -1,15 +1,23 @@
 import { createSlice } from "@reduxjs/toolkit";
+import axios from "axios";
 import { dummyProducts } from "../statics/dummy-products";
 
-const initialState = /*JSON.parse(localStorage.getItem("products")) ||*/ dummyProducts;
+const initialState = /*JSON.parse(localStorage.getItem("products")) ||*/ [];
 
 const productsSlice = createSlice({
   name: "products",
   initialState,
   reducers: {
-    
+    listProducts:async (state, action)=>{
+      return action.payload
+    }
   },
 });
+
+export const getProductsByCategory =category=>async(dispatch)=>{
+  const {data} = await axios.get(`/product/category/${category}`);
+  dispatch(listProducts(data));
+}
 
 // export const InCartProductsSelector = (state) => {
 //   return state.products.filter((product) => product.shopped);
@@ -24,5 +32,5 @@ const productsSlice = createSlice({
 //   }, 0);
 // };
 
-export const { } = productsSlice.actions;
+export const { listProducts } = productsSlice.actions;
 export default productsSlice.reducer;

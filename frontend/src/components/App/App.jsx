@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CartScreen from "../../screens/CartScreen";
+import CategoryScreen from "../../screens/CategoryScreen";
 import ProductScreen from "../../screens/ProductScreen";
 import Footer from "../Footer";
 import Main from "../Main";
@@ -16,6 +17,7 @@ export const App = () => {
         <Route path="/products/:productId" element={<ProductScreen />}  />
         <Route path="/cart" element={<CartScreen />} exact />
         <Route path="/cart/:productId" element={<CartScreen />}  />
+        <Route path="/category" element={<CategoryScreen />}  />
           
       </Routes>
       </nav>

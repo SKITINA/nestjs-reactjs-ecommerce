@@ -13,8 +13,8 @@ const Navbars = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
           <NavDropdown title="categories" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">clothes</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Accesoires</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.1">clothes</NavDropdown.Item>
+             <LinkContainer to='/category?cat=Accessory'><NavDropdown.Item href="#action/3.2">Accesory</NavDropdown.Item></LinkContainer>
               <NavDropdown.Item href="#action/3.3">chaussures</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">Robes</NavDropdown.Item>
