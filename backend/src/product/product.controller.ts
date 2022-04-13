@@ -10,7 +10,7 @@ import {
 import { CreateProductDto } from './dto/CreateProductDto';
 import { ProductService } from './product.service';
 
-@Controller('product')
+@Controller('products')
 export class ProductController {
   constructor(private productService: ProductService) {}
 

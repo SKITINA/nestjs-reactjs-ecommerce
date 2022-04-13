@@ -1,24 +1,24 @@
 ### Find all products
-Get http://localhost:8080/product
+Get http://localhost:8080/products
 
 ### Find a product by id 
-GET http://localhost:8080/product/3
+GET http://localhost:8080/products/3
 
 ### Find products by category
-GET http://localhost:8080/product/category/clothes
+GET http://localhost:8080/products/category/accessory
 
 ### Create a product
-Post http://localhost:8080/product/create
+Post http://localhost:8080/products/create
 Content-Type: application/json
 
 {
-    "name": "shoe",
-    "image": "img1",
+    "name": "Clock",
+    "image": "/images/img1.jpg",
     "brand": "bob",
-    "category": "clothes",
-    "description": "something",
+    "category": "accessory",
+    "description": "This is a very fancy product from Fako brand",
     "rating": 4,
-    "price": 29,
+    "price": 29.99,
     "countInStock": 40
 }
 
