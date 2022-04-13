@@ -1,0 +1,17 @@
+### Create a user
+Post http://localhost:8080/user/create
+Content-Type: application/json
+
+{
+    "name": "mohamed",
+    "password": "nouha",
+    "email": "nouhailaskitina2",
+    "isAdmin": true
+   }
+
+### find a email 
+GET  http://localhost:8080/user/email/nouhailaskitina
+
+
+###delete user 
+DELETE  http://localhost:8080/user/id/1
