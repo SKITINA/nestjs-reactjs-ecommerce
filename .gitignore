@@ -30,7 +30,6 @@ lerna-debug.log*
 # OS
 .DS_Store
 
-# tests
 # Tests
 /frontend/coverage
 /backend/coverage
