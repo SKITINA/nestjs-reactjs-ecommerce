@@ -29,4 +29,14 @@ export class ProductService {
   findByCatgory(category: string) {
     return this.repo.find({ category });
   }
-}
+
+ async deleteById(id:number){
+    
+      const product = await this.repo.findOne(id);
+      if (!product) {
+        throw new NotFoundException('product not found');
+      }
+      return this.repo.remove(product);
+    }
+  }
+

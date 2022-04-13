@@ -1,6 +1,7 @@
 import {
   Body,
   Controller,
+  Delete,
   Get,
   NotFoundException,
   Param,
@@ -31,5 +32,10 @@ export class ProductController {
   @Get('/category/:category')
   findByCategory(@Param('category') category: string) {
     return this.productService.findByCatgory(category);
+  }
+
+  @Delete('/delete/:id')
+  deleteById(@Param('id') id: number) {
+    return this.productService.deleteById(id);
   }
 }
