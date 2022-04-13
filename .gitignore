@@ -42,5 +42,10 @@ lerna-debug.log*
 !.vscode/launch.json
 !.vscode/extensions.json
 
+<<<<<<< HEAD
+# db
+/backend/db.sqlite
+=======
 # dbs
 /backend/db.sqlite
+>>>>>>> 7fe3ea192ae68b09e82458ef4e4f0f90a534ea3a
