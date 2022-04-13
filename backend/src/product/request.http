@@ -12,15 +12,15 @@ Post http://localhost:8080/products/create
 Content-Type: application/json
 
 {
-    "name": "Clock",
+    "name": "Chairo",
     "image": "/images/img1.jpg",
     "brand": "bob",
     "category": "accessory",
     "description": "This is a very fancy product from Fako brand",
-    "rating": 4,
-    "price": 29.99,
-    "countInStock": 40
+    "rating": 5,
+    "price": 13.99,
+    "countInStock": 25
 }
 
 ### delete product 
-DELETE http://localhost:8080/product/delete/2
+DELETE http://localhost:8080/products/delete/9
