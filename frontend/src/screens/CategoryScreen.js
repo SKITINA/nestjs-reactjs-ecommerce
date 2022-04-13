@@ -9,7 +9,6 @@ const CategoryScreen = () => {
   const category = seachParams.get("cat");
 
   const products = useSelector((state) => state.products);
-  console.log(products);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getProductsByCategory(category));

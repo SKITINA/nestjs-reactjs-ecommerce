@@ -23,7 +23,8 @@ const Navbars = () => {
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">Robes</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#home">about</Nav.Link>
+            <LinkContainer to="/category?cat=accessory" href="#home">about</LinkContainer>
+
             <Nav.Link href="#link">contact</Nav.Link>
           </Nav>
           <Nav className="d-flex align-items-center">
