@@ -23,7 +23,7 @@ export const dummyProducts = [
   },
   {
     id: 3,
-    name: "shawl",
+    name: "Shawl",
     image: "/images/img3.jpg",
     brand: "Fako",
     category: "Accessoires",
@@ -34,7 +34,7 @@ export const dummyProducts = [
   },
   {
     id: 4,
-    name: "clock",
+    name: "Clock",
     image: "/images/img4.jpg",
     brand: "Fako",
     category: "Accessoires",
