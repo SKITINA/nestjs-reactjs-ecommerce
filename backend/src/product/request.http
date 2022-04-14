@@ -12,14 +12,15 @@ Post http://localhost:8080/products/create
 Content-Type: application/json
 
 {
-    "name": "Chairo",
-    "image": "/images/img1.jpg",
-    "brand": "bob",
-    "category": "accessory",
-    "description": "This is a very fancy product from Fako brand",
-    "rating": 5,
-    "price": 13.99,
-    "countInStock": 25
+    id: 2,
+    name: "Fancy chair",
+    image: "/images/img1.jpg",
+    brand: "Fako",
+    category: "Accessoires",
+    description: "This is a very fancy product from Fako brand",
+    price: 20.99,
+    countInStock: 21,
+    rating: 4,
 }
 
 ### delete product 
