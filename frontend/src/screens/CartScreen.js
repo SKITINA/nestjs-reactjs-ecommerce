@@ -15,11 +15,6 @@ const CartScreen = () => {
     const qty = parseInt(searchParams.get("qty")) || 1;
     const dispatch = useDispatch();
     useEffect(() => {
-      async function func() {
-        const { data } = await axios.get(`/product/`);
-        console.log(data);
-      }
-      func()
       if (productId) {
         dispatch(addToCart({id:parseInt(productId), qty}));
       }

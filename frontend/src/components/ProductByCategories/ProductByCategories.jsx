@@ -2,7 +2,7 @@ import React from "react";
 import CategorieCarousel from "../CategorieCarousel";
 
 const ProductByCategories = () => {
-  const categories = ["accessoires"];
+  const categories = ["accesory"];
   return (
     <div>
       {categories.map((categorie) => (

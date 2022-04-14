@@ -15,16 +15,23 @@ const Navbars = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <NavDropdown title="categories" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">clothes</NavDropdown.Item>
-              <LinkContainer to="/category?cat=accessory">
-                <NavDropdown.Item href="#action/3.2">Accesory</NavDropdown.Item>
+            <LinkContainer to="/category?cat=clothes">
+              <NavDropdown.Item>clothes</NavDropdown.Item>
               </LinkContainer>
-              <NavDropdown.Item href="#action/3.3">chaussures</NavDropdown.Item>
+              <LinkContainer to="/category?cat=accessory">
+                <NavDropdown.Item>Accesory</NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to="/category?cat=chaussures">
+              <NavDropdown.Item>chaussures</NavDropdown.Item>
+              </LinkContainer>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Robes</NavDropdown.Item>
+              <LinkContainer to="/category?cat=robes">
+              <NavDropdown.Item>Robes</NavDropdown.Item>
+              </LinkContainer>
             </NavDropdown>
-            <Nav.Link href="#home">about</Nav.Link>
-            <Nav.Link href="#link">contact</Nav.Link>
+            <LinkContainer to="/about" ><Nav.Link href="#link">about</Nav.Link></LinkContainer>
+
+            <LinkContainer to="/contact" ><Nav.Link href="#link">contact</Nav.Link></LinkContainer>
           </Nav>
           <Nav className="d-flex align-items-center">
             <NavDropdown title={<FontAwesomeIcon icon={faUser} />} id="basic-nav-dropdown">
