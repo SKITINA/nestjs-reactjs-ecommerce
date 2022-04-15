@@ -6,9 +6,11 @@ GET http://localhost:8080/products/3
 
 ### Find products by category
 GET http://localhost:8080/products/category/accessory
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwibmFtZSI6ImltYWQiLCJlbWFpbCI6ImltYWRveG1hY2hpMUBnbWFpbC5jb20iLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNjUwMDQ2MTQ4LCJleHAiOjE2NTAwNDYyMDh9.BjbmQSMl9k0ZS6N6K7LyegIVCcP96CxOlJXdHBdrp7Q
 
 ### Create a product
 Post http://localhost:8080/products/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywibmFtZSI6ImltYWQiLCJlbWFpbCI6ImltYWRveG1hY2hpN0BnbWFpbC5jb20iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NTAwNDYyNjksImV4cCI6MTY1MDA0NjMyOX0.NcS2BuO_8G3bWOqnziYcmYmW5hl-bpnGvD_MNz7f_ds
 Content-Type: application/json
 
 {
