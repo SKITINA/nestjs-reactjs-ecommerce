@@ -6,14 +6,18 @@ import { Link } from "react-router-dom";
 
 const Navbars = () => {
   return (
+    //hnadarna navbar dark 
     <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
+
       <Container>
+        {/* had likcontainer to home l brand */}
         <LinkContainer to="/">
           <Navbar.Brand href="#home">Brand</Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
+            {/* nfss chi hna to /category query cat tkon smiha clothes */}
             <NavDropdown title="categories" id="basic-nav-dropdown">
             <LinkContainer to="/category?cat=clothes">
               <NavDropdown.Item>clothes</NavDropdown.Item>
@@ -39,6 +43,7 @@ const Navbars = () => {
               <NavDropdown.Item href="#action/3.2">log out</NavDropdown.Item>
             </NavDropdown>
             <Link to="/cart" className="text-white-50">
+              {/* hadi katjib lina icon */}
               <FontAwesomeIcon icon={faCartShopping} />
             </Link>
           </Nav>

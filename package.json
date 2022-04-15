@@ -22,5 +22,9 @@
   "homepage": "https://github.com/SKITINA/nestjs-reactjs-ecommerce#readme",
   "devDependencies": {
     "concurrently": "^7.1.0"
+  },
+  "dependencies": {
+    "react-elastic-carousel": "^0.11.5",
+    "react-multi-carousel": "^2.8.0"
   }
 }

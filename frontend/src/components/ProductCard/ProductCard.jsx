@@ -4,6 +4,7 @@ import Rating from "../Rating/Rating";
 
 const ProductCard = ({ product }) => {
   return (
+    // f projet dyal lna sawbna card hia lawla bina tswira name price rating o bina tani nawrko 3laa tswira dina haja o hadi 
     <Card style={{ width: "18rem" }}>
       <Link to={`/products/${product.id}`}>
         <Card.Img variant="top" src={product.image} className="h-100" />

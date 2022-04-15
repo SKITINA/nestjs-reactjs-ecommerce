@@ -1,1 +1,2 @@
-export {default} from './CategorieCarousel'
+import CategorieCarousel from "./CategorieCarousel";
+
