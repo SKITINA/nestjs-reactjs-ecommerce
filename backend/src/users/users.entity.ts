@@ -1,3 +1,4 @@
+import { IsEnum } from 'class-validator';
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
@@ -14,6 +15,6 @@ export class User {
   @Column({ unique: true })
   email: string;
 
-  @Column()
+  @Column({ default: false })
   isAdmin: boolean;
 }

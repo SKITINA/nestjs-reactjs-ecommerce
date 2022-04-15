@@ -1,0 +1,15 @@
+### Login user
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "email": "imadoxmachi4@gmail.com",
+  "password": "string"
+}
+
+### Get profile without access token
+GET http://localhost:8080/profile
+
+### Get profile with access token
+GET http://localhost:8080/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6ImltYWQiLCJlbWFpbCI6ImltYWRveG1hY2hpNEBnbWFpbC5jb20iLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNjUwMDI1MDYxLCJleHAiOjE2NTAwMjUxMjF9.fdb5sJowFNZcFUfwdsgTTJR5-4RzSCrGz1ypTcQ2KHE

@@ -24,4 +24,7 @@ export class CreateProductDto {
 
   @IsNumber()
   countInStock: number;
+
+  @IsNumber()
+  authorId: number;
 }
