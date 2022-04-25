@@ -1,0 +1,13 @@
+### Create user
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "name": "imad",
+  "password": "string",
+  "email": "imadoxmachi7@gmail.com",
+  "isAdmin": true
+}
+
+### Get a user by login
+GET http://localhost:8080/users/email/imadoxmachi@gmail.com

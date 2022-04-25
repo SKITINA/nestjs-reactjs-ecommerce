@@ -1,6 +1,5 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { find } from 'rxjs';
 import { Repository } from 'typeorm';
 import { CreateProductDto } from './dto/CreateProductDto';
 import { Product } from './product.entity';

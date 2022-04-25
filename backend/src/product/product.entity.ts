@@ -28,4 +28,7 @@ export class Product {
 
   @Column()
   countInStock: number;
+
+  @Column()
+  authorId: number;
 }
